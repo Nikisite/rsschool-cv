@@ -14,13 +14,20 @@ I really like to learn programming and I want to become a very successful progra
 
 ## Skils
 
-Html,CSS,PHP,JS,bootstarp:3;4;5
+* Html
+* CSS
+* PHP
+* JS
+* bootstarp:
+    - 3
+    - 4
+    - 5
 
 ## Example
 
-echo it's example;
-for(i=0;i<5;i++);
-#example{background:blue;}
+> echo it's example;
+> for(i=0;i<5;i++);
+> #example{background:blue;}
 
 ## Experience
 
