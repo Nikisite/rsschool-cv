@@ -14,7 +14,7 @@ I really like to learn programming and I want to become a very successful progra
 
 ## Skils
 
-Html,CSS,PHP,JS,bootstarp:3;4;5
+Html,CSS,PHP,JS,node JS,bootstarp:3;4;5
 
 ## Example
 
