@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>CV</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <!-- Navbar -->
+      <nav>
+        <ul class="nav-list-welcome">
+          <li class="welcomeToCv">
+            <a href="">Welcome to my CV</a>
+          </li>
+          <li class="welcomeToCv-button">
+            <a href="#" onclick="toggleList()">+</a>
+          </li>
+        </ul>
+        <ul class="nav-list">
+          <hr>
+          <li>
+            <a href="#" onclick="scrollToElement('information')">Information</a>
+          </li>
+          <li>
+            <a href="#" onclick="scrollToElement('contacts')">Contacts</a>
+          </li>
+          <li>
+            <a href="#" onclick="scrollToElement('skils')">Skils</a>
+          </li>
+          <li>
+            <a href="#" onclick="scrollToElement('code-examples')">Code examples</a>
+          </li>
+          <li>
+            <a href="#" onclick="scrollToElement('english-level')">English level & Education</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- Main Container -->
+
+  <div class="container">
+
+    <!-- Main Content -->
+    <main>
+      <div class="main-content">
+        <div class="row">
+          <div class="avatar-container">
+            <img class="avatar" src="./images/avatar.png" alt="Avatar">
+            <h1>Nikita Volkov</h1>
+          </div>
+          <div class="skils" id="skils">
+            <h2>Skils</h2>
+            <ul>
+              <li class="tablinks html active" onclick="openExample(event, 'html')">HTML</li>
+              <li class="tablinks css" onclick="openExample(event, 'css')">CSS</li>
+              <li class="tablinks js" onclick="openExample(event, 'js')">JavaScript</li>
+              <li class="tablinks node-js" onclick="openExample(event, 'node-js')">Node.js</li>
+            </ul>
+          </div>
+          <div class="code-examples" id="code-examples">
+            <h2>Code examples</h2>
+            <div class="tabcontainer">
+              <div id="html" class="tabcontent">
+                <h4>HTML</h4>
+                <pre>
+&lt;form action=&quot;/action_page.php&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Personalia:&lt;/legend&gt;
+    &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; value=&quot;John&quot;&gt;&lt;br&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</pre>
+              </div>
+              <div id="css" class="tabcontent">
+                <h4>CSS</h4>
+                <pre>
+html, body {
+  background-image: url('./images/background.jpg');
+  background-position: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow-x: hidden;
+}
+</pre>
+              </div>
+              <div id="js" class="tabcontent">
+                <h4>JavaScript</h4>
+                <pre>
+// Example: JavaScript Function to Create a Phone Number
+
+createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+  
+function createPhoneNumber(numbers){
+  let res = numbers.join('');
+  return `(${res.slice(0,3)}) ${res.slice(3,6)}-${res.slice(6, 10)}`;
+}</pre>
+              </div>
+              <div id="node-js" class="tabcontent">
+                <h4>Node.js</h4>
+                <pre>
+// Example: Express.js Route for Home Page
+
+app.get('/', (req, res) => {
+  res.render('index', { title: 'Home page', message: 'Hello world!' })
+})
+
+app.listen(3000);
+
+</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="information" id="information">
+            <h2>Information</h2>
+            <p>
+              I am a passionate web developer with a focus on creating dynamic and responsive web applications. My
+              journey
+              in
+              web development began with a fascination for how websites work, and I have since honed my skills in
+              various
+              technologies.
+            </p>
+          </div>
+          <div class="projects">
+            <h2>Projects</h2>
+            <ul>
+              <li><a href="https://github.com/Nikisite/shelter">Shelter</a>
+                <p>Cozy House shelter for pets in Boston</p>
+              </li>
+              <li><a href="https://github.com/Nikisite/cssBayan">cssBayan</a>
+                <p>The main goal to save positions and behavior of the accordion and the other technical requirements
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contacts" id="contacts">
+            <h2>Contacts</h2>
+            <p>Email: nkwolkow@gmail.com</p>
+            <p>Telegram: @nkwolkow</p>
+          </div>
+          <div class="english-level" id="english-level">
+            <h2>English Level & Education</h2>
+            <p>English Level: Intermediate</p>
+            <p>Education: Secondary education</p>
+          </div>
+        </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <a href="https://rs.school/courses/javascript-ru">
+        <img class="logo-rsschool" src='./images/rs-school-logo.svg'>
+      </a>
+      <p>&copy;2025</p>
+      <a href="https://github.com/Nikisite">
+        <img class="logo-github" src='./images/github-logo.png'>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleList() {
+      const list = document.querySelector(".nav-list");
+      const hr = document.querySelector(".nav-list hr");
+      const buttonToggle = document.querySelector(".welcomeToCv-button");
+
+      list.classList.toggle("active");
+      hr.classList.toggle("active");
+      buttonToggle.classList.toggle("active");
+    }
+
+    function openExample(event, language) {
+      const tabcontent = document.querySelectorAll(".tabcontent");
+      const tablinks = document.querySelectorAll(".tablinks");
+
+      tabcontent.forEach(tab => tab.style.display = "none");
+
+      tablinks.forEach(tab => tab.classList.remove("active"));
+
+      document.getElementById(language).style.display = "block";
+
+      event.currentTarget.classList.add("active");
+    }
+
+    function scrollToElement(id) {
+      document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+
+    function init() {
+      const defaultTab = document.querySelector(".tablinks.active");
+      if (defaultTab) {
+        defaultTab.click();
+      }
+    }
+    init();
+  </script>
+</body>
+
+</html>

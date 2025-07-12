@@ -6,15 +6,15 @@ Nikita Volkov
 
 telegram:@nkwolkow
 
-Viber:+380957449970
+Email:nkwolkow@gmail.com
 
 ## Information
 
-I really like to learn programming and I want to become a very successful programmer!
+I am a passionate web developer with a focus on creating dynamic and responsive web applications. My journey in web development began with a fascination for how websites work, and I have since honed my skills in various technologies.
 
 ## Skils
 
-Html,CSS,PHP,JS,node JS,bootstarp:3;4;5
+Html,CSS,Node.js,JS,bootstarp:3;4;5,express.js
 
 ## Example
 
@@ -33,4 +33,4 @@ Secondary education
 
 ## English language
 
-Pre intermediate
+Intermediate
