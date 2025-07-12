@@ -87,6 +87,10 @@ nav a{
   transition: width 2s ease;
 }
 
+.line-hr{
+  margin-right: 0;
+}
+
 .welcomeToCv-button{
   display: inline-block;
   font-size: 2rem;
