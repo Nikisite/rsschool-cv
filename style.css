@@ -114,7 +114,7 @@ nav a{
   width: 1024px;
   margin: 0 auto;
   flex-direction: column;
-  padding: 7rem 0 7rem ;
+  padding: 7rem 0 2rem ;
 }
 
 header {
@@ -406,7 +406,6 @@ main{
 }
 
 footer{
-  position: fixed;
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
   color: #333;
